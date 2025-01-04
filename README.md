@@ -31,8 +31,9 @@ Inside the ros 2 workspace clone this two package
 
 ```bash
 git clone https://github.com/fabiogueunige/robot_urdf.git
+git clone aruco node carmine
 ```
-Now give this instructions
+Now give this instructions SISTEMA
 ```bash
 # Passaggio 2: Sostituire il file aruco_node.py
 mv robot_urdf/change/aruco_node.py ros2_aruco/ros2_aruco/ros2_aruco/
@@ -44,7 +45,6 @@ mv robot_urdf/change/launch.sh .
 rm -r robot_urdf/change
 ```
 
-
 Our launch is organized by the file launch.sh. So after cloning run this command for make the file executable
 ```bash
 chmod +x launch.sh
@@ -55,6 +55,7 @@ chmod +x launch.sh
 then build the ros2 folder,
 move inside the ros2 workspace and run
 ```bash
+cd ..
 colcon build
 ```
 move in the src folder 
