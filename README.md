@@ -38,7 +38,7 @@ Now give this instructions
 mv robot_urdf/change/aruco_node.py ros2_aruco/ros2_aruco/ros2_aruco/
 
 # Passaggio 3: Spostare launch.sh fuori da robot_urdf
-mv robot_urdf/change/launch.sh robot_urdf/
+mv robot_urdf/change/launch.sh .
 
 # Passaggio 4: Eliminare la cartella "change"
 rm -r robot_urdf/change
