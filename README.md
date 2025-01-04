@@ -25,26 +25,28 @@ sudo apt install ros-humble-joint-state-publisher ros-humle-joint-state-publishe
 sudo apt install ros-humble-xacro
 ```
 
+For run this cose is also important to have this version of OpenCV library, so in case of different version use this code for unistall and install the one with correct version
+
+``` bash
+pip uninstall opencv-contrib-python opencv-python
+pip install opencv-contrib-python==4.5.4.60 opencv-python==4.5.4.60
+```
 # Installation 
 
 Inside the ros 2 workspace clone this two package
 
 ```bash
 git clone https://github.com/fabiogueunige/robot_urdf.git
-git clone aruco node carmine
+https://github.com/CarmineD8/ros2_aruco.git
 ```
-Now give this instructions SISTEMA
+
+After Cloned this two repositories peerform this code for change the modified package
+
 ```bash
-# Passaggio 2: Sostituire il file aruco_node.py
 mv robot_urdf/change/aruco_node.py ros2_aruco/ros2_aruco/ros2_aruco/
-
-# Passaggio 3: Spostare launch.sh fuori da robot_urdf
 mv robot_urdf/change/launch.sh .
-
-# Passaggio 4: Eliminare la cartella "change"
 rm -r robot_urdf/change
 ```
-
 Our launch is organized by the file launch.sh. So after cloning run this command for make the file executable
 ```bash
 chmod +x launch.sh
