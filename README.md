@@ -23,6 +23,7 @@ sudo apt-get install ros-humble-gazebo*
 sudo apt install ros-humble-gazebo-ros-pkgs
 sudo apt install ros-humble-joint-state-publisher ros-humle-joint-state-publisher-gui
 sudo apt install ros-humble-xacro
+sudo apt install ros-humble-joint-state-publisher
 ```
 
 For run this cose is also important to have this version of OpenCV library, so in case of different version use this code for unistall and install the one with correct version
@@ -31,6 +32,13 @@ For run this cose is also important to have this version of OpenCV library, so i
 pip uninstall opencv-contrib-python opencv-python
 pip install opencv-contrib-python==4.5.4.60 opencv-python==4.5.4.60
 ```
+
+Is importanto also to put the models folder inide the .gazebo folder.
+So download this git repository in any position you wants
+``` bash
+ git clone https://github.com/CarmineD8/aruco_ros.git
+```
+then find inside the folder model and put it inside the .gazebo folder on your pc
 # Installation 
 
 Inside the ros 2 workspace clone this two package
